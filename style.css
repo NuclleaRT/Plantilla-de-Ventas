@@ -11,6 +11,9 @@ body{
     border-radius: 5px;
     margin-left: 10px;
 }
+#container input:hover{
+    background-color: rgb(173, 231, 0);
+}
 
 button{
     font-size: 30px;
@@ -23,3 +26,4 @@ button{
 button:hover{
     background-color: rgb(173, 231, 0);
 }
+

@@ -63,8 +63,12 @@ function calcular(){
 
 
     let totalVentas = sumarVentas(ventas);
+    let valorMayor = ventaMayor(ventas);
+    let valorMenor = ventaMenor(ventas);
 
-    let mensaje = "El total de ventas del dia es: " + totalVentas;
+    let mensaje = "El total de ventas del dia es: " + totalVentas +
+                    "// La venta Mayor fue: " + valorMayor +
+                    "// La venta Menor fue: " + valorMenor;
 
     let elementoMensaje = document.getElementById('mostrarTexto');
     elementoMensaje.textContent = mensaje;
@@ -88,6 +92,29 @@ function extraerNumero(elemento){
 
     return miNumero;
 
+}
+
+function ventaMayor(array){
+    let valorMayor = array[0];
+    for(let venta of array){
+        if(venta > valorMayor){
+            valorMayor = venta;
+        }
+        
+    }
+    console.log(valorMayor);
+        return valorMayor;
+
+}
+
+function ventaMenor(array){
+    let valorMenor = array[0];
+    for(let venta of array){
+        if(venta < valorMenor){
+            valorMenor = venta;
+        }
+    }
+    return valorMenor;
 }
 
 
