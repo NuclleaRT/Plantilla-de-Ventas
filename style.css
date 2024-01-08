@@ -1,3 +1,25 @@
 body{
     background-color: rgb(13, 85, 53);
+    font-size: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container input{
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+button{
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(173, 231, 0);
 }
